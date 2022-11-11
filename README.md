@@ -1,1 +1,1 @@
-# LessonsApp2
+# LessonsApp
