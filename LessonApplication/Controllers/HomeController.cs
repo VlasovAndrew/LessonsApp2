@@ -1,5 +1,5 @@
 ﻿using LessonApplication.Models;
-
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -19,6 +19,7 @@ namespace LessonApplication.Controllers
             _logger = logger;
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Index(int id, string name)
         {
             TempData["Success"] = "Success";

@@ -15,6 +15,10 @@ namespace BL
             _dal = dal;
         }
 
+        public User GetByLogin(string login) {
+            return _dal.GetByLogin(login);
+        }
+
         public User GetById(int id)
         {
             return _dal.GetById(id);

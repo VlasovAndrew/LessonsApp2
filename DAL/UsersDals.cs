@@ -19,5 +19,9 @@ namespace DAL
         {
             return users.FirstOrDefault(item => item.Id == id);
         }
+        public User GetByLogin(string login)
+        {
+            return users.FirstOrDefault(item => item.Name == login);
+        }
     }
 }

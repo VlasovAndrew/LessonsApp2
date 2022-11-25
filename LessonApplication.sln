@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entiti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{5373E805-DD87-4979-8104-A3B21727A9B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{A1ED93E7-6325-49F3-92FF-7D72EA49BD0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{A1ED93E7-6325-49F3-92FF-7D72EA49BD0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORMDal", "ORMDal\ORMDal.csproj", "{5418F1FF-1696-4D1C-8103-53F465D0B8B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ORMDal", "ORMDal\ORMDal.csproj", "{5418F1FF-1696-4D1C-8103-53F465D0B8B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
