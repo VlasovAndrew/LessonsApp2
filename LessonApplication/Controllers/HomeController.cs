@@ -19,10 +19,15 @@ namespace LessonApplication.Controllers
             _logger = logger;
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize]
         public IActionResult Index(int id, string name)
         {
             TempData["Success"] = "Success";
+
+            if (User.Identity.IsAuthenticated) {
+                var userName = User.Identity.Name;
+            } 
+
             return View("Index");
         }
 

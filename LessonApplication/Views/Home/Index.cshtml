@@ -1,14 +1,31 @@
 ﻿
 @{
     ViewData["Title"] = "Home Page";
-    Layout = "_LayoutCustom";
+    Layout = "_Layout";
 }
-<partial name="_PartialDate" />
-<div class="text-center">
-    
+<style>
+    body {
+        margin: 0;
+        background-color: black;
+        padding: 10px 20px;
+    }
+</style>
+<p style="color: white; font-family: sans-serif; font-size: 14 px;
+margin-bottom: 6px; ">
+    <span>Score: </span><span id="scoreEl">0</span>
+</p>
+<canvas></canvas>
 
-   
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-
-    <iframe src="https://sgu.ru/"></iframe>
-</div>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: '@Url.Action("Index", "Home")',
+                data: {
+                    name: 'Ivan',
+                    id: 1
+                },
+            });
+        });
+    </script>   
+}
